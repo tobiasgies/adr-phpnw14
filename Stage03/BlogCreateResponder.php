@@ -16,16 +16,16 @@ class BlogCreateResponder {
     /**
      * @var TemplateSystem
      */
-    private $view;
+    private $templateSystem;
 
-    public function __construct(Response $response, TemplateSystem $view) { /* ... */ }
+    public function __construct(Response $response, TemplateSystem $templateSystem) { /* ... */ }
 
     public function __invoke(BlogPost $post) {
         if (!empty($post->getId())) {
             $this->response->redirect('/blog/edit/' . $post->getId());
         } else {
             $this->response->setContent(
-                $this->view->render('create.tpl', array('post' => $post))
+                $this->templateSystem->render('create.tpl', array('post' => $post))
             );
         }
     }
