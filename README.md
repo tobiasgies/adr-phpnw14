@@ -1,7 +1,7 @@
 Action-Domain-Responder Example
 ===============================
 
-This repository contains example files for my talk about the [Action-Domain-Responder](http://www.pmjones.github.io/adr)
+This repository contains example files for my talk about the [Action-Domain-Responder](http://pmjones.github.io/adr)
 design pattern at [PHP Northwest 2014](https://conference.phpnw.org.uk/phpnw14/). Please note that as of now, this is
 **NOT functional code.** Most of the methods are only implemented as stubs. The code is meant to demonstrate the
 principles of structuring a PHP application based on ADR, not provide a working example.
