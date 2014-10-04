@@ -32,7 +32,7 @@ class BlogController {
         Request $request,
         Response $response,
         BlogRepository $model,
-        TemplateSystem $View
+        TemplateSystem $view
     ) { /* ... */ }
 
     public function indexAction() { /* ... */ }
